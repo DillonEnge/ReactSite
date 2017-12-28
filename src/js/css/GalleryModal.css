@@ -1,0 +1,22 @@
+.gallery-modal {
+    height: 500px;
+    width: fit-content;
+    position: fixed;
+    display: inline-flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+}
+
+.image {
+    height: inherit;
+    border: solid 5px var(--color3);
+    border-radius: 1%;
+}
+
+.button-close {
+    margin: 20px;
+}
