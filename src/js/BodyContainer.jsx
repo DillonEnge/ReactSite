@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import ContactForm from './ContactForm';
 import Gallery from './Gallery';
-import MyStoreCheckout from './MyStoreCheckout';
 import { COPY } from './constants/COPY';
 import './css/BodyContainer.css';
 

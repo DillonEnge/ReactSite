@@ -9,7 +9,6 @@ class TabContainer extends Component {
             <div className='tab-container'>
                 <Tab label='about'/>
                 <Tab label='gallery'/>
-                <Tab label='shop'/>
                 <Tab label='contact'/>
             </div>
         );
