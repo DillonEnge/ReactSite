@@ -9,6 +9,7 @@ import Kellie8 from './Kellie8.JPG';
 import Kellie9 from './Kellie9.jpeg';
 import Kellie10 from './Kellie10.jpeg';
 import Kellie11 from './Kellie11.jpeg';
+import KellieLogo from './KellieLogo.png';
 
 export const Images = {
     Keys: [
@@ -22,7 +23,8 @@ export const Images = {
         'image8',
         'image9',
         'image10',
-        'image11'
+        'image11',
+        'logo'
     ],
     Kellie1,
     Kellie2,
@@ -34,5 +36,6 @@ export const Images = {
     Kellie8,
     Kellie9,
     Kellie10,
-    Kellie11
+    Kellie11,
+    KellieLogo
 };

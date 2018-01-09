@@ -15,6 +15,38 @@ const mapDispatchToProps = {
 };
 
 class GalleryModal extends AdvancedComponent {
+    constructor(props) {
+        super(props);
+
+        this.setWrapperRef = this.setWrapperRef.bind(this);           
+        this.handleClickOutside = this.handleClickOutside.bind(this);
+    }
+
+    componentDidMount() {
+        document.addEventListener('mousedown', this.handleClickOutside);
+    }
+
+    componentWillUnmount() {
+        document.removeEventListener('mousedown', this.handleClickOutside);
+    }
+
+    /**
+     * Set the wrapper ref
+     */
+    setWrapperRef(node) {
+        this.wrapperRef = node;
+    }
+
+    /**
+     * Alert if clicked on outside of element
+     */
+    handleClickOutside(event) {
+        const { hidePicture } = this.props;
+
+        if (this.wrapperRef && !this.wrapperRef.contains(event.target)) {
+            hidePicture();
+        }
+    }
 
     render() {
         const { galleryLogic, hidePicture } = this.props;
@@ -23,8 +55,7 @@ class GalleryModal extends AdvancedComponent {
         return (
             <div className='gallery-modal'>
                 <Background type='blur'/>
-                <img src={ activePicture } alt='' className='image'/>
-                <Button label='button-close' action={ hidePicture } text='X' />
+                <img src={ activePicture } alt='' className='image' ref={ this.setWrapperRef }/>
             </div>
         )
     }

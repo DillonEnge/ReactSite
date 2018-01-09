@@ -13,8 +13,6 @@
 
 .image {
     height: inherit;
-    border: solid 5px var(--color3);
-    border-radius: 1%;
 }
 
 .button-close {

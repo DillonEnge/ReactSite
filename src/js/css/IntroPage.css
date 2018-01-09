@@ -1,8 +1,19 @@
 .intro-image {
     display: inline-block;
-    height: 300px;
+    height: 500px;
     width: initial;
     margin: 20px;
-    border: solid 5px var(--color3);
-    border-radius: 1%;
+    animation: fadePop 4s;
+}
+
+@keyframes fadePop {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

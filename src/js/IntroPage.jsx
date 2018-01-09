@@ -14,18 +14,22 @@ const mapDispatchToProps = {
 };
 
 class IntroPage extends AdvancedComponent {
+    componentDidMount() {
+		const { hideIntro } = this.props;
+
+
+    	setTimeout(() => {
+			hideIntro();
+		}, 4000);
+    }
+
     render() {
         const { hideIntro } = this.props;
 
         return (
             <div className='intro-page'>
                 <Background />
-                <Title title='kellie shaw'/>
-                <BodyContainer empty={ true }>
-                    <img className='intro-image' src={ Images[ 'Kellie1' ] } alt='' />
-                    <img className='intro-image' src={ Images[ 'Kellie9' ] } alt='' />
-                    <Button text='Enter' action={ hideIntro }/>
-                </BodyContainer>
+                <img className='intro-image' src={ Images[ 'KellieLogo' ] } alt=''/>
             </div>
         );
     }
