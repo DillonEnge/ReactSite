@@ -5,6 +5,7 @@ import TabContainer from './TabContainer';
 import Title from './Title';
 import BodyContainer from './BodyContainer';
 import Seperator from './Seperator';
+import SlideMenu from './SlideMenu';
 import Background from './Background';
 import GalleryModal from './GalleryModal';
 import IntroPage from './IntroPage';
@@ -46,6 +47,7 @@ class MainApp extends AdvancedComponent {
 				{ pictureActive && <GalleryModal /> }
 				<Background />
 				{ this.renderHeader() }
+				<SlideMenu />
 				<BodyContainer />
 		  </div>
 		);
