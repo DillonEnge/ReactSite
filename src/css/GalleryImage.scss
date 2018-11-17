@@ -1,0 +1,16 @@
+.gallery-image {
+    display: inline-block;
+    height: 180px;
+    width: initial;
+    margin: 20px;
+}
+
+.gallery-image:hover {
+    border-color: var(--color5);
+    opacity: .75;
+    cursor: pointer;
+}
+
+.internal-image {
+    height: inherit;
+}
