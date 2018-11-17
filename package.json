@@ -2,6 +2,7 @@
   "name": "fullstack-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "www.kellieshaw.net",
   "dependencies": {
     "cloudinary-react": "^1.0.6",
     "node-sass": "^4.10.0",
